@@ -96,41 +96,16 @@ Global-Cluster-Distribution/
 - **Stability Check**: Ensures consistent predictions on validation set
 - **Inertia/BIC**: Helps identify optimal cluster count via elbow method
 
-## Sidebar Controls
+## Usage: Sidebar Controls
 
-```
-┌─ INDICATOR SELECTION (15-20 Curated)
-│  ├─ □ GDP per Capita
-│  ├─ □ Life Expectancy
-│  ├─ □ Population Growth
-│  ├─ □ Literacy Rate
-│  ├─ □ Healthcare Spending (% GDP)
-│  ├─ □ CO2 Emissions per Capita
-│  ├─ ... (+ 9-14 more indicators)
-│  ├─ [Select All] [Select Defaults] [Reset]
-│  └─ Data Availability: 85-95%
-│
-├─ COUNTRY FILTERING (Optional)
-│  ├─ [ All Countries ] (195+ countries)
-│  ├─ Filter by Region/Income Level
-│  └─ [Select All] [Deselect All]
-│
-├─ TIME PERIOD
-│  ├─ Year Range: [2010 ─────→ 2024]
-│  └─ ☑ Use Latest Available Year
-│
-├─ ALGORITHM
-│  ├─ ○ K-Means
-│  └─ ○ GMM
-│
-├─ HYPERPARAMETERS
-│  ├─ Clusters/Components: [2────────10]
-│  ├─ KNN n_neighbors: [3───────────10]
-│  ├─ Train/Val Split: [60%─────────90%]
-│  └─ ☑ Apply KNN Imputation
-│
-└─ [RUN CLUSTERING]
-```
+- **Indicator Selection**: Multi-select from curated World Bank indicators (GDP, Life Expectancy, etc.)
+- **KNN Neighbors**: Choose number of neighbors for missing data imputation
+- **Algorithm**: Select K-Means or GMM (Gaussian Mixture Model)
+- **Clusters/Components**: Set number of clusters/components (2–10)
+- **GMM Covariance Type**: (If GMM selected) Choose covariance type
+- **[Run Clustering]**: Click to update all results. All outputs remain frozen until you click this button.
+
+> Note: There is no country filtering, time period slider, or select-all/reset buttons in the current app version.
 
 ## Main Panel Output
 
