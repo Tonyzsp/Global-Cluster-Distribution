@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.streamlit/
+.DS_Store
+*.log
+PLAN.md
